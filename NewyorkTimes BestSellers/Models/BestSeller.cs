@@ -55,6 +55,8 @@ namespace NewyorkTimes_BestSellers.Models
                 book.Publisher = BookDetails.GetNamedString("publisher");
                 Add(book);
             }
+
+          
         }
     }
 }

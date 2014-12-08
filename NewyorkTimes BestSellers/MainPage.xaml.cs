@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using NewyorkTimes_BestSellers.ViewModel;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -25,6 +26,9 @@ namespace NewyorkTimes_BestSellers
         public MainPage()
         {
             this.InitializeComponent();
+            MainViewModel vm = new MainViewModel();
+            this.DataContext = vm;
+
         }
     }
 }

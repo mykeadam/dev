@@ -8,6 +8,23 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="9"/>
+            <RowDefinition Height="55"/>  
+        </Grid.RowDefinitions>
+        
+        <TextBlock 
+            TextWrapping="Wrap"
+            Text="New York Times Best Sellers"
+            Margin="60,20,0,20"
+            FontSize="64"/>
+        
+        <GridView Grid.Row="1"
+         Margin="60,0,0,0"
+         ItemsSource="{Binding FictionBestSellers}"
+         ItemTemplate="{StaticResource BookDataTemplate}"
+        />
+                 
+        
     </Grid>
 </Page>
